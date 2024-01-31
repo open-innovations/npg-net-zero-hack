@@ -6,6 +6,8 @@ logo_colour: white
 
 <p>Here is some placeholder text</p>
 
+<p>This is a map of the number of customers in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+
 
 {% comp 'wrapper', {
 	"component": comp.oi.map.svg,
@@ -19,8 +21,7 @@ logo_colour: white
 		"value": "Customer Numbers",
 		"scale": "Viridis",
 		"min": 0,
-		"max": 5000,
-		"template": "{{ Unique Postal Districts }} blah"
+		"max": 5000
 	}
 } %}{% endcomp %}
 
