@@ -5,20 +5,22 @@ logo_colour: white
 ---
 
 <p>Here is some placeholder text</p>
-{{ data.sample_data | dump(2) }}
 
 
 {% comp 'wrapper', {
 	"component": comp.oi.map.svg,
 	"config": {
-		"data": data.sample_data,
+		"data": "data.sample_data",
 		"geojson": {
           "key": "mapit_code",
           "data": geojson.leeds_postcode_sectors
 		},
-		"key": "postcodes",
+		"key": "Unique Postal Districts",
 		"value": "Customer Numbers",
-		"scale": "Viridis"
+		"scale": "Viridis",
+		"min": 0,
+		"max": 5000,
+		"template": "{{ Unique Postal Districts }} blah"
 	}
 } %}{% endcomp %}
 
