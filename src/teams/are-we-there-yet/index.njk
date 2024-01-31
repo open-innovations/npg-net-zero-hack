@@ -5,48 +5,21 @@ logo_colour: white
 ---
 
 <p>Here is some placeholder text</p>
+{{ data.sample_data | dump(2) }}
 
 
 {% comp 'wrapper', {
 	"component": comp.oi.map.svg,
 	"config": {
-		"data": "data.sample_data",
+		"data": data.sample_data,
 		"geojson": {
-          "data": "geojson.postcodes",
-          "key": "sector"
+          "key": "mapit_code",
+          "data": geojson.leeds_postcode_sectors
 		},
-		"width": 400,
-		"matchKey": "Unique Postal Districts",
+		"key": "postcodes",
 		"value": "Customer Numbers",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 3000,
-		"legend": {
-			"position": "top right",
-			"items": [{
-				"value": 30000,
-				"label": "30k+"
-			},{
-				"value": 25000,
-				"label": "25k"
-			},{
-				"value": 20000,
-				"label": "20k"
-			},{
-				"value": 15000,
-				"label": "15k"
-			},{
-				"value": 10000,
-				"label": "10k"
-			},{
-				"value": 5000,
-				"label": "5k"
-			}]
-		},
-		"tooltip": "Gross disposable income ({{ _value }})<br />{{ Region }}: <strong>&pound;{{ {{ _value }} }}</strong>",
-		"attribution": "Source: <a href=\"https://www.ons.gov.uk/economy/regionalaccounts/grossdisposablehouseholdincome/datasets/regionalgrossdisposablehouseholdincomegdhi\">Regional gross disposable household income: all ITL level regions</a> (ONS) aggregated to DNO license areas."
-	},
-	"download": {"text": "Gross disposable income per head by DNO license area", "type": "CSV"}
+		"scale": "Viridis"
+	}
 } %}{% endcomp %}
 
 
