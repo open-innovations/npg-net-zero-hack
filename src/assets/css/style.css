@@ -8,3 +8,20 @@
   Could be modularised, given PostCSS could enable much smaller css packages to be created.
 */
 @import 'css/oi.css';
+
+.strip { line-height: 1.4em; padding: 0 0.25em; }
+.Q1 { background-color: #FF6700; color: black; }
+.Q2 { background-color: #1DD3A7; color: black; }
+.Q3 { background-color: #2254F4; color: white; }
+.Q4 { background-color: #EF3AAB; color: black; }
+.Q5 { background-color: #722EA5; color: white; }
+.oi-viz { margin-top: 1em; margin-bottom: 2em; text-align: center; }
+.oi-slider { margin: auto; }
+.oi-slider-inner label { display: block; margin: auto; }
+.oi-slider .oi-slider-inner input { padding:0; margin: 0; }
+.oi-legend-inner .oi-legend-item { margin-left: 0.5em; margin-right: 0.5em; }
+.oi-attribution { font-size: 0.8em; color: #555; line-height: 1.25em; margin-top: 1em; }
+table { border-collapse: collapse; }
+td, th { border: 1px solid #000; }
+th { background: #000; color: white; }
+strong { font-family: Poppins, Arial, sans-serif; }

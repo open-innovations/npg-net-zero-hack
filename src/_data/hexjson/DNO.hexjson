@@ -1,0 +1,20 @@
+{
+	"layout":"odd-r",
+	"hexes": {
+		"ENWL":{"n":"ENWL","id":"ENWL","name":"ENWL","q":3,"r":2},
+		"NPG (Northern Electric)":{"n":"NPG (Northern Electric)","id":"NPG (Northern Electric)","name":"NPG (Northern Electric)","q":4,"r":2},
+		"NPG (Yorkshire Electric)":{"n":"NPG (Yorkshire Electric)","id":"NPG (Yorkshire Electric)","name":"NPG (Yorkshire Electric)","q":4,"r":1},
+		"SPEN (SP Distribution)":{"n":"SPEN (SP Distribution)","id":"SPEN (SP Distribution)","name":"SPEN (SP Distribution)","q":3,"r":3},
+		"SPEN (SP MANWEB)":{"n":"SPEN (SP MANWEB)","id":"SPEN (SP MANWEB)","name":"SPEN (SP MANWEB)","q":2,"r":1},
+		"SSE":{"n":"SSE","id":"SSE","name":"SSE","q":3,"r":4},
+		"SSE (Southern)":{"n":"SSE (Southern)","id":"SSE (Southern)","name":"SSE (Southern)","q":3,"r":-1},
+		"UKPN (East)":{"n":"UKPN (East)","id":"UKPN (East)","name":"UKPN (East)","q":5,"r":0},
+		"UKPN (London)":{"n":"UKPN (London)","id":"UKPN (London)","name":"UKPN (London)","q":4,"r":-1},
+		"UKPN (South)":{"n":"UKPN (South)","id":"UKPN (South)","name":"UKPN (South)","q":5,"r":-1},
+		"WPD (East Midlands)":{"n":"WPD (East Midlands)","id":"WPD (East Midlands)","name":"WPD (East Midlands)","q":4,"r":0},
+		"WPD (Midlands)":{"n":"WPD (Midlands)","id":"WPD (Midlands)","name":"WPD (Midlands)","q":3,"r":1},
+		"WPD (South Wales)":{"n":"WPD (South Wales)","id":"WPD (South Wales)","name":"WPD (South Wales)","q":3,"r":0},
+		"WPD (South West)":{"n":"WPD (South West)","id":"WPD (South West)","name":"WPD (South West)","q":2,"r":-1}
+	},		
+	"version":"0.3"
+}

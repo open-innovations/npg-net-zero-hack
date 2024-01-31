@@ -1,0 +1,58 @@
+"Region","Licence area","Main technology","Bid outcome","No of Service Providers","Total Flexibility Capacity"
+"ENWL","Electricity North West Limited","Fossil - Oil","Accept",1,31.06
+"ENWL","Electricity North West Limited","Other","Accept",1,35.68
+"ENWL","Electricity North West Limited","Other","Reject",1,67.22
+"NPG (Northern Electric)","Northern Powergrid (Northeast) Limited","Demand","Rejected",1,1.51
+"NPG (Northern Electric)","Northern Powergrid (Northeast) Limited","Demand","Rejected",1,0.07
+"NPG (Yorkshire Electric)","Northern Powergrid (Yorkshire) Plc","Biofuel - Biogas from anaerobic digestion (excluding landfill & sewage)","Accepted",1,11.2
+"NPG (Yorkshire Electric)","Northern Powergrid (Yorkshire) Plc","Demand","Accepted",1,1.54
+"NPG (Yorkshire Electric)","Northern Powergrid (Yorkshire) Plc","Demand","Rejected",2,4.64
+"NPG (Yorkshire Electric)","Northern Powergrid (Yorkshire) Plc","Biofuel - Biogas from anaerobic digestion (excluding landfill & sewage)","Accepted",1,1.4
+"NPG (Yorkshire Electric)","Northern Powergrid (Yorkshire) Plc","Demand","Accepted",1,0.11
+"NPG (Yorkshire Electric)","Northern Powergrid (Yorkshire) Plc","Demand","Rejected",2,0.02
+"SPEN (SP Distribution)","SP Distribution plc","Demand","Accepted",7,148.499
+"SPEN (SP Distribution)","SP Distribution plc","Demand","Rejected",9,689.06
+"SPEN (SP Distribution)","SP Distribution plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",1,0.8
+"SPEN (SP Distribution)","SP Distribution plc","Stored Energy (all stored energy irrespectve of the original energy source)","Rejected",3,29.1
+"SPEN (SP MANWEB)","SP Manweb plc","Demand","Accepted",7,229.522
+"SPEN (SP MANWEB)","SP Manweb plc","Demand","Rejected",11,494.304
+"SPEN (SP MANWEB)","SP Manweb plc","Fossil - Gas","Accepted",3,168.577
+"SPEN (SP MANWEB)","SP Manweb plc","Fossil - Gas","Rejected",4,184.335
+"SPEN (SP MANWEB)","SP Manweb plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",2,4.781
+"SPEN (SP MANWEB)","SP Manweb plc","Stored Energy (all stored energy irrespectve of the original energy source)","Rejected",2,47.4
+"SPEN (SP MANWEB)","SP Manweb plc","Water (flowing water or head of water)","Rejected",1,2.3
+"SSE","Scottish Hydro Electric Power Distribution Plc","Water (flowing water or head of water)","Accepted",1,5.85
+"SSE (Southern)","Southern Electric Power Distribution Plc","Demand","Accepted",3,101.27
+"SSE (Southern)","Southern Electric Power Distribution Plc","Demand","Rejected",2,6.81
+"SSE (Southern)","Southern Electric Power Distribution Plc","Fossil - Gas","Accepted",1,78
+"SSE (Southern)","Southern Electric Power Distribution Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",1,20.7
+"UKPN (East)","Eastern Power Networks Plc","Demand","Accepted",7,770.170485929
+"UKPN (East)","Eastern Power Networks Plc","Demand","Rejected",3,6.29394
+"UKPN (East)","Eastern Power Networks Plc","Electric Vehicles","Accepted",1,1.557
+"UKPN (East)","Eastern Power Networks Plc","Fossil - Gas","Accepted",3,19.183
+"UKPN (East)","Eastern Power Networks Plc","Fossil - Gas","Rejected",3,16.818
+"UKPN (East)","Eastern Power Networks Plc","Solar","Accepted",13,533.1
+"UKPN (East)","Eastern Power Networks Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",12,601.33862
+"UKPN (East)","Eastern Power Networks Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Rejected",1,2.099
+"UKPN (East)","Eastern Power Networks Plc","Wind","Accepted",6,1265.25
+"UKPN (London)","London Power Networks Plc","Demand","Accepted",3,13.5007
+"UKPN (London)","London Power Networks Plc","Demand","Rejected",2,0.9073
+"UKPN (London)","London Power Networks Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",5,2.347
+"UKPN (London)","London Power Networks Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Rejected",2,0.249
+"UKPN (South)","South Eastern Power Networks Plc","Biomass","Accepted",2,33.5
+"UKPN (South)","South Eastern Power Networks Plc","Demand","Accepted",6,504.205005578
+"UKPN (South)","South Eastern Power Networks Plc","Demand","Rejected",3,1.43451
+"UKPN (South)","South Eastern Power Networks Plc","Electric Vehicles","Accepted",1,0.24
+"UKPN (South)","South Eastern Power Networks Plc","Fossil - Gas","Accepted",5,165.92
+"UKPN (South)","South Eastern Power Networks Plc","Fossil - Gas","Rejected",1,1
+"UKPN (South)","South Eastern Power Networks Plc","Solar","Accepted",1,27.63
+"UKPN (South)","South Eastern Power Networks Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",10,113.23192
+"UKPN (South)","South Eastern Power Networks Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Rejected",2,17.928
+"WPD (East Midlands)","National Grid Electricity Distribution (East Midlands) Plc","Demand","Accepted",1,9.2
+"WPD (East Midlands)","National Grid Electricity Distribution (East Midlands) Plc","Other","Accepted",2,45.928
+"WPD (Midlands)","National Grid Electricity Distribution (West Midlands) Plc","Other","Accepted",1,0.164
+"WPD (Midlands)","National Grid Electricity Distribution (West Midlands) Plc","Solar","Accepted",1,344
+"WPD (South Wales)","National Grid Electricity Distribution (South Wales) Plc","Other","Accepted",1,0.056
+"WPD (South West)","National Grid Electricity Distribution (South West) Plc","Fossil - Gas","Accepted",1,105.6
+"WPD (South West)","National Grid Electricity Distribution (South West) Plc","Other","Accepted",1,0.14
+"WPD (South West)","National Grid Electricity Distribution (South West) Plc","Stored Energy (all stored energy irrespectve of the original energy source)","Accepted",1,728

@@ -1,0 +1,13 @@
+md5: 5517f40159c6f42dc2b5742fe49aa453
+frozen: true
+deps:
+- checksum: '"{501BE37C-3007-4210-BEF0-127F9A4D24F6},2"'
+  size: 482347
+  hash: md5
+  path: 
+    https://odileeds.sharepoint.com/:x:/s/open-innovations-public/EXzjG1AHMBBCvvASf5pNJPYBhsOq5kzxZHJTaqZC3ZCYiA?e=Z7qNEC&download=1
+outs:
+- md5: b1b71a38a83bd402d471868df0d3bce7
+  size: 482347
+  hash: md5
+  path: ECR-SSEN.csv

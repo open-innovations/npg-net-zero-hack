@@ -1,0 +1,7 @@
+
+/* OI hex cartogram component */
+.oi-map-hex .hex:focus, .oi-map-hex .hex path:focus { outline: none; }
+.oi-map-hex .hex.outline path { stroke: black; stroke-width: 4px; }
+/* OI table component */
+.oi-table { display: block; overflow-x: auto; }
+.oi-table table { border-collapse: collapse; max-width: 100%; }

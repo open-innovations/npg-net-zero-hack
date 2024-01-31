@@ -1,0 +1,13 @@
+md5: b7d00185edc77dfcd329fbfbeacd820b
+frozen: true
+deps:
+- checksum: '"{678C5E4B-618A-4A88-B10A-AFA70E280F4F},2"'
+  size: 912796
+  hash: md5
+  path: 
+    https://odileeds.sharepoint.com/:x:/s/open-innovations-public/EUtejGeKYYhKsQqvpw4oD08BZM-0n4-uDWfUwZdZEEgP6Q?e=rsJaV3&download=1
+outs:
+- md5: a638892f8ec3c90c1444607c14bf40e9
+  size: 912796
+  hash: md5
+  path: ECR-NGED.csv
