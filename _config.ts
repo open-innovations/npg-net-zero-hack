@@ -13,7 +13,7 @@ import jsonLoader from "lume/core/loaders/json.ts";
 
 const site = lume({
   src: './src',
-  location: new URL("https://open-innovations.org/projects/northernpowergrid/flex/built-site/"),
+  location: new URL("https://open-innovations.github.io/npg-net-zero-hack/"),
 });
 
 // Register a series of extensions to be loaded by the OI CSV loader
