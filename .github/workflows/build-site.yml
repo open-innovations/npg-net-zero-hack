@@ -9,7 +9,7 @@ name: Build site
     branches: [ main ]
     paths:
       - 'src/**'
-      - '_config.js'
+      - '_config.ts'
       - 'deno.json'
       - 'import_map.json'
       - '.github/workflows/build-site.yml'
