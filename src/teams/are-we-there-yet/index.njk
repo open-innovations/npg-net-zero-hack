@@ -7,8 +7,8 @@ logo_colour: white
 <style>
 ul.grid { list-style:none; margin: 0; }
 ul.grid > li { background: #efefef; padding: 1.5rem; }
-ul.grid > li > h2 { margin-bottom: 0; }
-ul.grid > li > h2 + p { margin-top: 0.5rem; }
+ul.grid > li > h3 { margin-bottom: 0; }
+ul.grid > li > h3 + p { margin-top: 0.5rem; }
 ul.grid .oi-viz { margin-bottom: 0; }
 </style>
 
@@ -16,9 +16,10 @@ ul.grid .oi-viz { margin-bottom: 0; }
 
 <p>Here is some placeholder text</p>
 
+<h2>Summary</h2>
 <ul class="grid">
 	<li>
-		<h2>Customers</h2>
+		<h3>Customers</h3>
 
 		<p>This is a map of the number of electric grid connections (domestic, commercial and industrial) in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
@@ -60,7 +61,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 		} %}{% endcomp %}
 	</li>
 	<li>
-		<h2>Heat pumps</h2>
+		<h3>Heat pumps</h3>
 
 		<p>This is a map of the number of heat pumps in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
@@ -103,7 +104,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 	</li>
 	<li>
 
-		<h2>EV chargers</h2>
+		<h3>EV chargers</h3>
 
 		<p>This is a map of the number of EV chargers in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
@@ -152,7 +153,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 	</li>
 	<li>
 
-		<h2>% Of Connections with LCT</h2>
+		<h3>Connections with LCT</h3>
 
 		<p>This is a map of the percentage of connections in each postcode sector of Leeds using low carbon technologies (solar, heat pump, electric vehicle charging or battery storage). Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
@@ -193,13 +194,210 @@ ul.grid .oi-viz { margin-bottom: 0; }
 				},
 				"columns": [{
 					"name": "tooltip",
-					"template": "<strong>{{ geojson.properties.sector }}</strong><br />% Of Connections with LCT: {{ % Of Connections with LCT | toLocaleString() }}%"
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with LCT: {{ % Of Connections with LCT | toLocaleString() }}%"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
+
+		<h3>Connections with PV</h3>
+
+		<p>This is a map of the number of the percentage of connections in each postcode sector of Leeds using photovoltaics. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "% of Connections with PV",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 100,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80"
+					},{
+						"value": 60,
+						"label": "60"
+					},{
+						"value": 40,
+						"label": "40"
+					},{
+						"value": 20,
+						"label": "20"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with PV: {{ % of Connections with PV | toLocaleString() }}%"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
+
+		<h3>Connections with Energy Storage</h3>
+
+		<p>This is a map of the number of the percentage of connections in each postcode sector of Leeds using energy storage. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "% of Connections with Energy Storage",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 100,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80"
+					},{
+						"value": 60,
+						"label": "60"
+					},{
+						"value": 40,
+						"label": "40"
+					},{
+						"value": 20,
+						"label": "20"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with energy storage: {{ % of Connections with Energy Storage | toLocaleString() }}%"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
+
+		<h3>Connections with EV Chargers</h3>
+
+		<p>This is a map of the number of the percentage of connections in each postcode sector of Leeds using EV chargers. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "% of Connections with EV Chargers",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 100,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80"
+					},{
+						"value": 60,
+						"label": "60"
+					},{
+						"value": 40,
+						"label": "40"
+					},{
+						"value": 20,
+						"label": "20"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with EV chargers: {{ % of Connections with EV Chargers | toLocaleString() }}%"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
+
+		<h3>Connections with heat pumps</h3>
+
+		<p>This is a map of the number of the percentage of connections in each postcode sector of Leeds using heat pumps. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "% of Connections with Heatpumps",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 100,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80"
+					},{
+						"value": 60,
+						"label": "60"
+					},{
+						"value": 40,
+						"label": "40"
+					},{
+						"value": 20,
+						"label": "20"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with heat pumps: {{ % of Connections with Heatpumps | toLocaleString() }}%"
 				}],
 				"tooltip": "tooltip"
 			}
 		} %}{% endcomp %}
 	</li>
 </ul>
+<p>Note that <strong>LS5 3</strong> has very high values for EV chargers and, therefore, low-carbon technologies because it contains a leasing company with many EVs registered to the same address.</p>
 
 <h2>Notes</h2>
 
