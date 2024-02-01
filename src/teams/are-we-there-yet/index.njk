@@ -28,7 +28,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -56,7 +56,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Customers: {{ Customer Numbers | toLocaleString() }}"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -70,7 +75,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -98,7 +103,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Heat pumps: {{ Number of Heat Pumps | toLocaleString() }}"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -113,7 +123,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -147,7 +157,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />EV chargers: {{ Number of EV Chargers | toLocaleString() }}"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -162,7 +177,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -196,7 +211,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with LCT: {{ % Of Connections with LCT | toLocaleString() }}%"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -211,7 +231,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -245,7 +265,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with PV: {{ % of Connections with PV | toLocaleString() }}%"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -260,7 +285,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -294,7 +319,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with energy storage: {{ % of Connections with Energy Storage | toLocaleString() }}%"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -309,7 +339,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -343,7 +373,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with EV chargers: {{ % of Connections with EV Chargers | toLocaleString() }}%"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
@@ -358,7 +393,7 @@ ul.grid .oi-viz { margin-bottom: 0; }
 			"config": {
 				"data": "data.sample_data",
 				"geojson": {
-				  "key": "mapit_code",
+				  "key": "sector",
 				  "data": geojson.leeds_postcode_sectors
 				},
 				"key": "Unique Postal Districts",
@@ -392,7 +427,12 @@ ul.grid .oi-viz { margin-bottom: 0; }
 					"name": "tooltip",
 					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Connections with heat pumps: {{ % of Connections with Heatpumps | toLocaleString() }}%"
 				}],
-				"tooltip": "tooltip"
+				"tooltip": "tooltip",
+				"tools": {
+					"filter": {
+						"label": "Unique Postal Districts"
+					}
+				}
 			}
 		} %}{% endcomp %}
 	</li>
