@@ -4,83 +4,203 @@ header_class: Q5
 logo_colour: white
 ---
 
+<style>
+ul.grid { list-style:none; margin: 0; }
+ul.grid > li { background: #efefef; padding: 1.5rem; }
+ul.grid > li > h2 { margin-bottom: 0; }
+ul.grid > li > h2 + p { margin-top: 0.5rem; }
+ul.grid .oi-viz { margin-bottom: 0; }
+</style>
+
+
+
 <p>Here is some placeholder text</p>
 
+<ul class="grid">
+	<li>
+		<h2>Customers</h2>
 
-<h2>Customers</h2>
+		<p>This is a map of the number of customers in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
-<p>This is a map of the number of customers in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "Customer Numbers",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 6000,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 6000,
+						"label": "6k+"
+					},{
+						"value": 4000,
+						"label": "4k"
+					},{
+						"value": 2000,
+						"label": "2k"
+					},{
+						"value": 0,
+						"label": "0k"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Customers: {{ Customer Numbers | toLocaleString() }}"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
+		<h2>Heat pumps</h2>
 
-{% comp 'wrapper', {
-	"component": comp.oi.map.svg,
-	"config": {
-		"data": "data.sample_data",
-		"geojson": {
-          "key": "mapit_code",
-          "data": geojson.leeds_postcode_sectors
-		},
-		"key": "Unique Postal Districts",
-		"value": "Customer Numbers",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 6000,
-		"columns": [{
-			"name": "tooltip",
-			"template": "<strong>{{ geojson.properties.sector }}</strong><br />Customers: {{ Customer Numbers | toLocaleString() }}"
-		}],
-		"tooltip": "tooltip"
-	}
-} %}{% endcomp %}
+		<p>This is a map of the number of heat pumps in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
-<h2>Heat pumps</h2>
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "Number of Heat Pumps",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 150,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 150,
+						"label": "150+"
+					},{
+						"value": 100,
+						"label": "100"
+					},{
+						"value": 50,
+						"label": "50"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />Heat pumps: {{ Number of Heat Pumps | toLocaleString() }}"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
 
-<p>This is a map of the number of heat pumps in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+		<h2>EV chargers</h2>
 
-{% comp 'wrapper', {
-	"component": comp.oi.map.svg,
-	"config": {
-		"data": "data.sample_data",
-		"geojson": {
-          "key": "mapit_code",
-          "data": geojson.leeds_postcode_sectors
-		},
-		"key": "Unique Postal Districts",
-		"value": "Number of Heat Pumps",
-		"scale": "Viridis",
-		"min": 0,
-		"max": 140,
-		"columns": [{
-			"name": "tooltip",
-			"template": "<strong>{{ geojson.properties.sector }}</strong><br />Heat pumps: {{ Number of Heat Pumps | toLocaleString() }}"
-		}],
-		"tooltip": "tooltip"
-	}
-} %}{% endcomp %}
+		<p>This is a map of the number of EV chargers in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "Number of EV Chargers",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 1000,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 1000,
+						"label": "1000+"
+					},{
+						"value": 800,
+						"label": "800"
+					},{
+						"value": 600,
+						"label": "600"
+					},{
+						"value": 400,
+						"label": "400"
+					},{
+						"value": 200,
+						"label": "200"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />EV chargers: {{ Number of EV Chargers | toLocaleString() }}"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+	<li>
 
-<h2>EV chargers</h2>
+		<h2>% Of Connections with LCT</h2>
 
-<p>This is a map of the number of EV chargers in each postcode sector of Leeds. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
+		<p>This is a map of the number of the percentage of connections in each postcode sector of Leeds using low carbon technologies. Data from <a href="https://northernpowergrid.opendatasoft.com/explore/embed/dataset/lct-datasets-ps-upload/custom/">Northern Powergrid</a></p>
 
-{% comp 'wrapper', {
-	"component": comp.oi.map.svg,
-	"config": {
-		"data": "data.sample_data",
-		"geojson": {
-          "key": "mapit_code",
-          "data": geojson.leeds_postcode_sectors
-		},
-		"key": "Unique Postal Districts",
-		"value": "Number of EV Chargers",
-		"scale": "Viridis",
-		"columns": [{
-			"name": "tooltip",
-			"template": "<strong>{{ geojson.properties.sector }}</strong><br />EV chargers: {{ Number of EV Chargers | toLocaleString() }}"
-		}],
-		"tooltip": "tooltip"
-	}
-} %}{% endcomp %}
+		{% comp 'wrapper', {
+			"component": comp.oi.map.svg,
+			"config": {
+				"data": "data.sample_data",
+				"geojson": {
+				  "key": "mapit_code",
+				  "data": geojson.leeds_postcode_sectors
+				},
+				"key": "Unique Postal Districts",
+				"value": "% Of Connections with LCT",
+				"scale": "Viridis_r",
+				"min": 0,
+				"max": 100,
+				"legend": {
+					"position": "bottom left",
+					"items": [{
+						"value": 100,
+						"label": "100%"
+					},{
+						"value": 80,
+						"label": "80"
+					},{
+						"value": 60,
+						"label": "60"
+					},{
+						"value": 40,
+						"label": "40"
+					},{
+						"value": 20,
+						"label": "20"
+					},{
+						"value": 0,
+						"label": "0"
+					}]
+				},
+				"columns": [{
+					"name": "tooltip",
+					"template": "<strong>{{ geojson.properties.sector }}</strong><br />% Of Connections with LCT: {{ % Of Connections with LCT | toLocaleString() }}%"
+				}],
+				"tooltip": "tooltip"
+			}
+		} %}{% endcomp %}
+	</li>
+</ul>
 
 <h2>Notes</h2>
 
-
+<p>These visualisations are made using <a href="https://open-innovations.github.io/oi-lume-viz/">OI Lume Viz</a>.</p>
